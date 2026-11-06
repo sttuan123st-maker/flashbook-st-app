@@ -1,0 +1,25 @@
+{
+  "name": "FLASHBOOK ST",
+  "short_name": "FLASHBOOK ST",
+  "description": "Nền tảng học tập và giảng dạy thông minh",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#faf8fd",
+  "theme_color": "#5927a5",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

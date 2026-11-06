@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5927a5"><meta name="description" content="FLASHBOOK ST - Nền tảng học tập và giảng dạy thông minh">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png">
+<title>FLASHBOOK ST</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar"><button class="brand" id="brandHome"><span class="logo">F</span><span><b>FLASHBOOK ST</b><small>SMART LEARNING</small></span></button><div class="top-actions"><span id="syncState" class="sync">● Lưu trên thiết bị</span><button id="installBtn" class="btn small ghost" hidden>Cài ứng dụng</button><button id="logoutBtn" class="btn small ghost" hidden>Đăng xuất</button></div></header>
+<main id="main">
+<section id="welcome" class="welcome">
+<div class="hero"><div class="eyebrow">HỌC TẬP • KẾT NỐI • PHÁT TRIỂN</div><h1>Học thông minh hơn<br><span>cùng FLASHBOOK ST.</span></h1><p>Tạo flashcard, giao bài tập, kiểm tra kiến thức và kết nối lớp học trong một không gian.</p><div class="hero-tags"><span>✦ Flashcards</span><span>✦ Quiz</span><span>✦ Lớp học số</span></div></div>
+<div class="auth-card"><div class="auth-heading"><span class="mini-logo">F</span><div><h2>Chào mừng bạn!</h2><p>Chọn vai trò để bắt đầu</p></div></div>
+<div class="role-picker"><button class="role active" data-role="student"><span>🎓</span><b>Học sinh</b><small>Học bài và làm bài tập</small></button><button class="role" data-role="teacher"><span>🧑‍🏫</span><b>Giáo viên</b><small>Tạo lớp và quản lý học tập</small></button></div>
+<div class="tabs"><button class="tab active" data-tab="login">Đăng nhập</button><button class="tab" data-tab="register">Đăng ký</button></div>
+<form id="authForm"><label>Họ và tên<input id="fullName" autocomplete="name" placeholder="Tên của bạn" required></label><label>Email<input id="email" type="email" autocomplete="email" placeholder="name@example.com" required></label><label>Mật khẩu<input id="password" type="password" minlength="6" autocomplete="current-password" placeholder="Tối thiểu 6 ký tự" required></label><button class="btn primary wide" type="submit" id="authSubmit">Đăng nhập với tư cách Học sinh</button><p class="fine">Bản thử nghiệm lưu tài khoản trên thiết bị này. Chưa phải xác thực email trên máy chủ.</p></form>
+</div></section>
+<section id="workspace" hidden>
+<aside class="sidebar"><div class="profile"><div class="avatar" id="avatar">S</div><div><b id="userName">Người dùng</b><small id="userRole">Học sinh</small></div></div><nav id="nav"></nav><div class="side-note"><b>FLASHBOOK ST</b><small>Học tập không giới hạn.</small></div></aside>
+<div class="content"><div class="page-head"><div><div class="eyebrow" id="pageEyebrow">KHÔNG GIAN HỌC TẬP</div><h1 id="pageTitle">Tổng quan</h1><p id="pageDesc">Chào mừng bạn quay trở lại.</p></div><div class="head-avatar" id="headAvatar">S</div></div><div id="pageContent"></div></div>
+</section>
+</main><div id="toast" role="status"></div>
+<footer>FLASHBOOK ST <span>•</span> Phiên bản khởi đầu 1.0 <span>•</span> Dữ liệu thử nghiệm lưu trên thiết bị</footer>
+</div><script src="app.js"></script>
+</body></html>
